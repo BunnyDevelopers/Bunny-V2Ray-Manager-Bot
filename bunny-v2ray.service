@@ -1,0 +1,12 @@
+[Unit]
+Description=bunny-v2ray Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/local/bunny-v2ray/
+ExecStart=/usr/local/bunny-v2ray
+
+[Install]
+WantedBy=multi-user.target

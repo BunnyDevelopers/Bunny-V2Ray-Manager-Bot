@@ -1,0 +1,48 @@
+{    
+
+"name": "Bunny-V2Ray-Manager-Bot",
+    "description": "A bot that can Manage your v2ray",
+    "logo": "https://telegra.ph/file/a300722ddab9d8d24fc15.jpg",
+    "keywords": [
+        "v2ray",
+        "v2ray pannel",
+        "v2ray bot",
+        "DarkV2ray"
+    ],
+    "website": "https://youtech.live",
+    "repository": "https://github.com/BunnyDevelopers/Bunny-V2Ray-Manager-Bot",
+    "success_url": "https://t.me/bunny_developers",
+    "env": {
+        "ADMINS": {
+            "description": "Your Telegram ID use @my_id_bot",
+            "value": "",
+            "required": true
+        },
+        "CHROMEDRIVER_PATH": {
+            "description": "crome path",
+            "value": "/app/.chromedriver/bin/chromedriver",
+            "required": true
+        },
+        "IP": {
+            "description": "Your vps ip",
+            "value": "",
+            "required": true
+        },
+        "TOKEN": {
+            "description": "Your telegram bot token",
+            "value": "",
+            "required": true
+        }
+    },
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
